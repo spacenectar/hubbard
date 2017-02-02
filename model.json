@@ -1,0 +1,60 @@
+{
+  "Settings" : {
+    "SiteName" : "Hubbard",
+    "Version" : "0.0.1"
+  },
+	"Users": {
+		"User1": {
+			"UserID": 1,
+			"Username": "alex",
+			"Password": "test",
+			"FirstName": "Alex",
+			"Surname": "Ward",
+			"Location": "United Kingdom",
+			"Avatar": "https://www.dropbox.com/s/z3o2lipixjt883s/avi-itsame.jpg?dl=0"
+		}
+	},
+	"Households": {
+		"Household1": {
+			"HouseholdId": 1,
+			"Name": "Ward",
+			"Members": {
+				"User1": true
+			},
+			"Subscription": true,
+			"PaymentHistory": {
+				"Payment1": {
+					"amount": 3.99,
+					"date": "02/12/2017"
+				}
+			},
+			"Stores": {
+				"Store1": {
+					"StoreID": 1,
+					"Name": "Pantry",
+					"Location": "Garage",
+					"Image": null,
+					"Items": {
+						"Item1": {
+							"Quantity": 1,
+							"WarningLevel": 1,
+							"DateAdded": "02/02/2017",
+							"ExpiryDate": "09/2018",
+							"ExpiryType": "Best Before"
+						}
+					}
+				}
+			}
+		}
+	},
+	"Items": {
+		"Item1": {
+			"ItemID": 1,
+			"ItemName": "Spaghetti Rings",
+			"Brand": "Essential Waitrose",
+			"Barcode": "5000169077108",
+			"Type": "Food",
+			"ImageURL": "https://www.dropbox.com/s/yx6891g9zi3e75z/2017-02-02%2019.45.49.jpg?dl=0"
+		}
+	}
+}

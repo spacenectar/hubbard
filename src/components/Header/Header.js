@@ -14,8 +14,30 @@ import Link from '../Link';
 import Navigation from '../Navigation';
 import logoUrl from './logo-small.png';
 import logoUrl2x from './logo-small@2x.png';
+import * as firebase from 'firebase';
 
 class Header extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      SiteName : 'Loading...'
+    }
+  }
+
+  componentDidMount() {
+    const rootRef = firebase.database().ref().child('Settings');
+    const siteNameRef = rootRef.child('SiteName');
+
+    siteNameRef.on('value' , snap => {
+      this.setState(
+        {
+          SiteName : snap.val()
+        }
+      )
+    })
+  }
+
   render() {
     return (
       <div className={s.root}>
@@ -26,7 +48,7 @@ class Header extends React.Component {
             <span className={s.brandTxt}>Your Company</span>
           </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>React</h1>
+            <h1 className={s.bannerTitle}>{ this.state.SiteName }</h1>
             <p className={s.bannerDesc}>Complex web apps made easy</p>
           </div>
         </div>

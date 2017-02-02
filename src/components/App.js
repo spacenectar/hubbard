@@ -8,6 +8,17 @@
  */
 
 import React, { Children, PropTypes } from 'react';
+import * as firebase from 'firebase';
+
+const FBConfig = {
+  apiKey: 'AIzaSyAcnWfxp8eHWMdEUmfU58zWL4AwfyTktR8',
+  authDomain: 'hubbard-2d281.firebaseapp.com',
+  databaseURL: 'https://hubbard-2d281.firebaseio.com',
+  storageBucket: 'hubbard-2d281.appspot.com',
+  messagingSenderId: '355426604475',
+};
+
+firebase.initializeApp(FBConfig);
 
 const ContextType = {
   // Enables critical path CSS rendering
