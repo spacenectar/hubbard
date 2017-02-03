@@ -29,8 +29,8 @@ class App extends Component {
     siteNameRef.on('value' , snap => {
       this.setState(
         {
-          SiteName : snap.val()
-        }
+            SiteName : snap.val()
+          }
       )
     })
   }
