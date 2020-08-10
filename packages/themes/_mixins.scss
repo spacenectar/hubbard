@@ -1,0 +1,20 @@
+@use "sass:color";
+
+@mixin buttonColor($color, $invert) {
+  @if ($invert == true) {
+    color: lighten(color.invert(color.complement($color)), 80%);
+    border-right: 10px solid lighten($color, 20%);
+    &:hover {
+      background-color: lighten($color, 15%);
+      border-color: lighten($color, 30%)
+    }
+  } @else {
+    color: darken(color.invert(color.complement($color)), 80%);
+    border-right: 10px solid darken($color, 20%);
+    &:hover {
+      background-color: darken($color, 10%);
+      border-color: darken($color, 30%)
+    }
+  }
+  background-color: $color;
+}
