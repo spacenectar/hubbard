@@ -1,8 +1,8 @@
 [🏠 Docsite home](../../docs/index.md)
 
-# AFP Project Component library
+# Hubbard Project Component library
 
-This is the primary component library of the AFP project. New components should always be created inside the `local` folder.
+This is the primary component library of the Hubbard project. New components should always be created inside the `local` folder.
 
 This is where our Storybook implementation lives. For those who don't know what storybook is, here is a brief introduction:
 
@@ -10,7 +10,7 @@ This is where our Storybook implementation lives. For those who don't know what 
 
 ## Getting started
 
-In the root of the AFP project, ensure that you have installed all packages and dependencies and then run the project:
+In the root of the Hubbard project, ensure that you have installed all packages and dependencies and then run the project:
 
 ```bash
 yarn install
@@ -21,7 +21,7 @@ yarn storybook
 
 It is recommended to use the [`Buildcom`](https://github.com/foxleigh81/buildcom) npm package to ensure consistency in component generation: 
 
-Running this in the AFP project root will generate a 'my-new-component` component in the local folder, with sass-modules and typescript already configured as well as an example spec file and an example storybook story.
+Running this in the Hubbard project root will generate a 'my-new-component` component in the local folder, with sass-modules and typescript already configured as well as an example spec file and an example storybook story.
 
 ```bash
 npx buildcom -sjt -c "sass" -m --output "packages/components/src/local" --name "My New Component"
