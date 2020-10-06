@@ -1,6 +1,6 @@
 {
   "name": "hubbard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "git@github.com:foxleigh81/hubbard.git",
   "author": "foxleigh81 <alex@alexfoxleigh.com>",
@@ -10,23 +10,21 @@
     "packages/*"
   ],
   "dependencies": {
-    "lerna": "^3.16.4",
-    "npm-run-all": "^4.1.5",
-    "snyk": "^1.258.2"
+    "lerna": "^3.22.1",
+    "npm-run-all": "^4.1.5"
   },
   "scripts": {
     "start": "lerna run start --scope @hubbard/client",
-    "dev" : "yarn component-dev & yarn start",
-    "develop" : "yarn component-dev & yarn storybook & yarn start",
+    "dev": "yarn component-dev & yarn start",
+    "develop": "yarn component-dev & yarn storybook & yarn start",
     "test": "lerna run test",
-    "test-local" : "lerna run test-local",
+    "test-local": "lerna run test-local",
     "lint": "lerna run lint",
     "storybook": "lerna run storybook --scope @hubbard/components --stream",
-    "build-storybook" : "lerna run build-storybook --scope @hubbard/components --parallel",
+    "build-storybook": "lerna run build-storybook --scope @hubbard/components --parallel",
     "build": "lerna run build --scope @hubbard/components --scope @hubbard/client --parallel",
     "component-build": "lerna run build --scope @hubbard/components",
     "component-dev": "yarn component-build & lerna run watch --parallel --scope @hubbard/components",
     "diff": "lerna diff"
-  },
-  "snyk": true
+  }
 }
