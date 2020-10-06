@@ -74,7 +74,7 @@ module.exports = {
                 // Prefer `dart-sass`
                 implementation: require('sass'),
                 sourceMap: false,
-                prependData: `
+                additionalData: `
                   @use '@hubbard/themes' as vars;
                   @use '@hubbard/themes/breakpoints' as bp;
                 `,
