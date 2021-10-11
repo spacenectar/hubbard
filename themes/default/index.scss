@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'overrides';
+
+body {
+    font-family: 'montserratregular';
+    font-size: vars.$default;
+}
+
+h1 {
+    font-family: 'montserratblack';
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'montserratbold';
+}
