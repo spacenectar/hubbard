@@ -18,5 +18,5 @@ export default {
 }
 
 // Stories
-export const Default: React.FC = () => <Authentication name="test" colour="green"/>
+export const Default: React.FC = () => <Authentication />
 
