@@ -28,7 +28,7 @@
     "file-loader": "^6.2.0",
     "markdown-loader": "^6.0.0",
     "moment": "^2.29.1",
-    "next": "10.0.0",
+    "next": "12.1.0",
     "next-images": "^1.6.2",
     "next-on-netlify": "^2.6.0",
     "raw-loader": "^4.0.2",
